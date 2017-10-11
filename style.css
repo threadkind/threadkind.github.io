@@ -1,0 +1,35 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  color: pink;
+  margin-bottom: 5%;
+}
+
+.portfolioTile {
+  display: inline-block;
+  border-radius: 50%;
+  background: pink;
+  height: 150px;
+  width: 150px;
+  margin: 3% 3%
+}
+
+#portfolioTiles{
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+}
