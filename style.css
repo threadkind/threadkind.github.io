@@ -1,3 +1,32 @@
-h1 {
-	color: purple;
+/*colors
+medium blue #519CA5
+dark blue #37486D
+dark purple #401841
+medium purple #811C4E
+grey #9EAD8A
+light blue #97CABD
+
+galaxy image: https://pixabay.com/en/astronomy-bright-constellation-dark-1867616/;
+*/
+
+* {
+	font-family: 'Encode Sans Expanded', sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	background: url(assets/galaxy.jpg);
+}
+#nav1 {
+	float; left;
+	color: black;
+}
+.nav.nav-tabs {
+	background: #401841;
+}
+.nav.nav-tabs li a{
+	color: #9EAD8A;
+}
+.nav.nav-tabs li a:hover{
+	color: #811C4E;
 }
