@@ -30,3 +30,17 @@ body {
 .nav.nav-tabs li a:hover{
 	color: #811C4E;
 }
+#tileContainer{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.projectTile {
+	flex-grow: 	1;
+	background: #37486D;
+	color: white;
+	width: 200px;
+	height: 300px;
+	margin: 20px;
+	box-shadow: 2px 2px 10px black;
+}
