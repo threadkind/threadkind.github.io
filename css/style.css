@@ -362,9 +362,11 @@ main nav position
 /**********************
 ABOUT SECTION
 ***********************/
+
 .about .box-container {
-	margin-top: 120px;
+	margin-top: 20px;
 	padding: 15px 0;
+	background: rgba(255,255,255,1);
 }
 
 .about-box {
@@ -411,9 +413,9 @@ ABOUT SECTION
 QUOTE SECTION
 ***********************/
 
-.quote {
+#about {
 	min-height: 600px;
-	padding: 250px 0;
+	padding: 100px 0;
 	background: url('../img/about_bg.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -436,12 +438,12 @@ PORTFOLIO SECTION
 ***********************/
 
 .portfolio .box-container {
-	margin-top: 90px;
+	margin-top: 20px;
 }
 
 .portfolio .portfolio-item {
 	position: relative;
-	margin-top: 30px;
+	margin-top: 20px;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -489,6 +491,9 @@ PORTFOLIO SECTION
 
 .portfolio > .load-more {
 	margin-top: 30px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	padding: 0;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -611,9 +616,9 @@ CONTACT SECTION
 }
 
 .contact-form .btn-submit:hover {
-	color: #131316;
+	color: #ffffff;
 	background: transparent;
-	border: 1px solid #131316;
+	border: 1px solid #ffffff;
 }
 
 .contact-form .btn-submit:active,
@@ -688,7 +693,7 @@ HELPER CLASSES
 	transform: translate(-50%, -50%);
 }
 
-.-purple {
+.-teal {
 	color: #3bd9c6;
 }
 
