@@ -12,7 +12,7 @@ body {
 
 section {
 	position: relative;
-	padding: 120px 0;
+	padding: 80px 0;
 }
 
 section .title {
@@ -137,7 +137,7 @@ HOME SECTION
 	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
-	border: 1px solid #ffe600;
+	border: 1px solid #3bd9c6;
 	outline: none;
 	-webkit-transform: perspective(1px) translateZ(0);
 	-moz-transform: perspective(1px) translateZ(0);
@@ -159,7 +159,7 @@ HOME SECTION
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #ffe600;
+	background: #3bd9c6;
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
 	-ms-transform: scale(0);
@@ -197,7 +197,7 @@ NAVIGATION
 	margin-bottom: 0;
 	background: #ffffff;
 	border: none;
-	border-bottom: 1px solid #ffe600;
+	border-bottom: 1px solid #3bd9c6;
 	border-radius: 0;
 }
 
@@ -209,7 +209,7 @@ NAVIGATION
 
 .navbar-brand > .logo {
 	width: 100%;
-	max-width: 186px;
+	max-width: 46px;
 	max-height: 46px;
 }
 
@@ -218,7 +218,7 @@ NAVIGATION
 }
 
 .navbar-default .navbar-collapse {
-	border-color: #ffe600;
+	border-color: #3bd9c6;
 }
 
 .navbar-default .navbar-nav>li {
@@ -252,7 +252,7 @@ NAVIGATION
 .navbar-default .navbar-nav>.active>a:hover {
 	background: #ffffff;
 	color: #131316;
-	border: 1px solid #ffe600;
+	border: 1px solid #3bd9c6;
 }
 
 /**********************
@@ -380,8 +380,8 @@ ABOUT SECTION
 	content: '';
 	margin: 0 16px 0 0;
 	padding: 12px;
-	border-right: 1px solid #ffe600;
-	color: #ffe600;
+	border-right: 1px solid #3bd9c6;
+	color: #3bd9c6;
 	font-size: 25px;
 	font-weight: 300;
 }
@@ -403,6 +403,9 @@ ABOUT SECTION
 	font-weight: 300;
 	text-align: center;
 }
+#wormhole {
+	background: rgba(59, 217, 198, 0.8);
+}
 
 /**********************
 QUOTE SECTION
@@ -411,7 +414,7 @@ QUOTE SECTION
 .quote {
 	min-height: 600px;
 	padding: 250px 0;
-	background: linear-gradient( rgba(255, 230, 0, 0.8), rgba(255, 230, 0, 0.8)), url('../img/about_bg.jpg');
+	background: url('../img/about_bg.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -457,7 +460,7 @@ PORTFOLIO SECTION
 	height: 100%;
 	top: 100%;
 	left: 0;
-	background: rgba(255, 230, 0, 0.8);
+	background: rgba(59, 217, 198, 0.8);
 	-webkit-transition: top 0.3s ease-in-out;
 	-moz-transition: top 0.3s ease-in-out;
 	-ms-transition: top 0.3s ease-in-out;
@@ -530,8 +533,17 @@ CLIENTS SECTION
 CONTACT SECTION
 ***********************/
 
+#contact {
+	min-height: 568px;
+	max-height: 1050px;
+	background: url("../img/contact_bg.jpg");
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .contact .box-container {
-	margin-top: 110px;
+	margin-top: 40px;
 }
 
 .contact-form .row {
@@ -543,9 +555,9 @@ CONTACT SECTION
 	display: block;
 	width: 100%;
 	padding: 13px 20px;
-	background: #ffe600;
+	background: #3bd9c6;
 	color: #8e8e8e;
-	border: 1px solid #ffe600;
+	border: 1px solid #3bd9c6;
 	line-height: 1.5;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -587,7 +599,7 @@ CONTACT SECTION
 	width: 100%;
 	padding: 10px;
 	background: #131316;
-	color: #ffe600;
+	color: #3bd9c6;
 	border-radius: 0;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -654,11 +666,11 @@ FOOTER SECTION
 }
 
 .footer .social-list > li > a:hover {
-	border: 1px solid #ffe600;
+	border: 1px solid #3bd9c6;
 }
 
 .footer .social-list > li > a:hover .icon {
-	color: #ffe600;
+	color: #3bd9c6;
 }
 
 /**********************
@@ -676,8 +688,8 @@ HELPER CLASSES
 	transform: translate(-50%, -50%);
 }
 
-.-yellow {
-	color: #ffe600;
+.-purple {
+	color: #3bd9c6;
 }
 
 .-white {
@@ -709,7 +721,7 @@ RESPONSIVE
 		max-width: 56px;
 		margin: 0 auto 32px;
 		border-right: none;
-		border-bottom: 1px solid #ffe600;
+		border-bottom: 1px solid #3bd9c6;
 	}
 }
 
