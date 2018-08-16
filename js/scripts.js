@@ -22,7 +22,7 @@ const projectObj = {
 		image: 'images/projects/search-app.png',
 		description: 'Created as an exercise for the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship',
 		build: 'Built with HTML, CSS and Javascript with API calls to Unsplash and NY Times',
-		url: 'http://http://portfolio.threadkind.com/Search-App/',
+		url: 'http://portfolio.threadkind.com/Search-App/',
 		repo: 'https://github.com/threadkind/Search-App'
 	},
 	feedReaderTesting: {
