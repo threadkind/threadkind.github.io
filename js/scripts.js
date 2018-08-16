@@ -16,6 +16,15 @@ else {
 	Click the view repo link to view the projects code on GitHub.`}
 
 const projectObj = {
+	searchApp: {
+		id: 'searchApp',
+		name: 'Search App',
+		image: 'images/projects/search-app.png',
+		description: 'Created as an exercise for the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship',
+		build: 'Built with HTML, CSS and Javascript with API calls to Unsplash and NY Times',
+		url: 'http://http://portfolio.threadkind.com/Search-App/',
+		repo: 'https://github.com/threadkind/Search-App'
+	},
 	feedReaderTesting: {
 		id: 'feedReaderTesting',
 		name: 'Feed Reader Testing',
@@ -111,7 +120,7 @@ const projectObj = {
 		name: 'Codevember 2017',
 		image: 'images/projects/codevember.png',
 		description: 'CodeVember is a challenge for developers to make a creative sketch a day in November',
-		build: 'Built with HTML, CSS + Javascript',
+		build: 'Built with HTML (HTML5 Canvas), CSS + Javascript',
 		url: 'http://portfolio.threadkind.com/codevember2017/index.html',
 		repo: 'https://github.com/threadkind/codevember2017'
 	}
