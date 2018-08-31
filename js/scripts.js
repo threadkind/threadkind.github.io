@@ -16,6 +16,15 @@ else {
 	Click the view repo link to view the projects code on GitHub.`}
 
 const projectObj = {
+	RestaurantReviewApp: {
+		id: 'restaurantReviewApp',
+		name: 'Restaurant Review App',
+		image: 'images/projects/restaurant-reviews.png',
+		description: 'Created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship',
+		build: 'Built with HTML, CSS and Javascript with Accessibility and Service Worker',
+		url: 'https://github.com/threadkind/GWGND05-Restaurant-Review-App',
+		repo: 'https://github.com/threadkind/GWGND05-Restaurant-Review-App'
+	},
 	searchApp: {
 		id: 'searchApp',
 		name: 'Search App',
