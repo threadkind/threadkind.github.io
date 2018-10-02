@@ -16,6 +16,15 @@ else {
 	Click the view repo link to view the projects code on GitHub.`}
 
 const projectObj = {
+	BookTrackingApp: {
+		id: 'bookTrackingApp',
+		name: 'Book Tracking App',
+		image: 'images/projects/book-tracking-app.png',
+		description: 'Created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship',
+		build: 'Built with React, HTML, CSS and Javascript',
+		url: 'http://portfolio.threadkind.com/GWGND06-MyReads-Book-Tracking-App/',
+		repo: 'https://github.com/threadkind/GWGND06-MyReads-Book-Tracking-App'
+	},
 	RestaurantReviewApp: {
 		id: 'restaurantReviewApp',
 		name: 'Restaurant Review App',
