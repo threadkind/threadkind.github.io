@@ -16,6 +16,15 @@ else {
 	Click the view repo link to view the projects code on GitHub.`}
 
 const projectObj = {
+	NeighborhoodMap: {
+		id: 'neighborhoodMap',
+		name: 'Neighborhood Map',
+		image: 'images/projects/neighborhood-map.png',
+		description: 'Build from scratch with custom map markers as final project in Nanodegree',
+		build: 'Built with React, CSS and Javascript(JSX)',
+		url: 'https://portfolio.threadkind.com/GWGND07-Neighborhood-Map/',
+		repo: 'https://github.com/threadkind/GWGND07-Neighborhood-Map'
+	},
 	BookTrackingApp: {
 		id: 'bookTrackingApp',
 		name: 'Book Tracking App',
