@@ -131,6 +131,18 @@ nav {
 	color: #fff;
 }
 
+.projectInfo h2 {
+	font-size: 24px;
+}
+
+.projectInfo p {
+	font-size: 11.5px;
+}
+
+.info-spacer {
+	height: 8px;
+}
+
 .hide {
 	display: none;
 }
@@ -256,7 +268,11 @@ nav {
 	}
 
 	.projectInfo h2 {
-		font-size: 3em;
+		font-size: 28px;
+	}
+
+	.projectInfo p {
+		font-size: 14px;
 	}
 
 	.repo {
