@@ -20,7 +20,7 @@ const projectObj = {
 		id: 'neighborhoodMap',
 		name: 'Neighborhood Map',
 		image: 'images/projects/neighborhood-map.png',
-		description: 'A responsive, progressive web app built from scratch with React with accessibility considerations. This project includes custom map markers, uses the Google Maps API and is the final project in the Nanodegree program. It also pulls through data from Flickr, FourSquare + Unsplash APIs.',
+		description: 'A responsive, progressive web app built from scratch in React with accessibility considerations. This project includes custom map markers, uses the Google Maps API and is the final project in the Nanodegree program. It also pulls through data from Flickr, FourSquare + Unsplash APIs.',
 		build: 'Built with React, CSS and Javascript(JSX)',
 		url: 'https://portfolio.threadkind.com/GWGND07-Neighborhood-Map/',
 		repo: 'https://github.com/threadkind/GWGND07-Neighborhood-Map'
@@ -29,7 +29,7 @@ const projectObj = {
 		id: 'bookTrackingApp',
 		name: 'Book Tracking App',
 		image: 'images/projects/book-tracking-app.png',
-		description: 'A responsive book tracking app built with React with routing using React-Router. Created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship. An initial static page was provided (link to starter code on GitHub README). Books can be changed between shelves and there is a search page to add more books to the shelves. The project uses custom CSS and has a custom menu button.',
+		description: 'A responsive book tracking app built with React with routing using React-Router. Created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship. An initial static page was provided (link to starter code on GitHub README). Books can be changed between shelves and there is a search page to add more books to the shelves. The project uses custom CSS and has a custom "opening/closing book" menu button.',
 		build: 'Built with React, HTML, CSS and Javascript',
 		url: 'http://portfolio.threadkind.com/GWGND06-MyReads-Book-Tracking-App/',
 		repo: 'https://github.com/threadkind/GWGND06-MyReads-Book-Tracking-App'
@@ -38,7 +38,7 @@ const projectObj = {
 		id: 'restaurantReviewApp',
 		name: 'Restaurant Review App',
 		image: 'images/projects/restaurant-reviews.png',
-		description: 'A responsive Restaurant Review progressive web app. Created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship. An initial static page was provided (link to starter code on GitHub README). The app registers a service worker and has a JSON manifest. Custom CSS was included to improve color contrast for imporved accessibility',
+		description: 'A responsive Restaurant Review progressive web app. Created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship. An initial static page was provided (link to starter code on GitHub README). The app registers a service worker and includes a manifest. Custom CSS was included to improve color contrast for improved accessibility',
 		build: 'Built with HTML, CSS and Javascript with Accessibility and Service Worker',
 		url: 'https://github.com/threadkind/GWGND05-Restaurant-Review-App',
 		repo: 'https://github.com/threadkind/GWGND05-Restaurant-Review-App'
@@ -47,7 +47,7 @@ const projectObj = {
 		id: 'searchApp',
 		name: 'Search App',
 		image: 'images/projects/search-app.png',
-		description: 'A responsive search app pulling through information from The New York Times API and images from Unsplash API. The initial view shows a random image from Unsplash. When a word is search the background changes to a related image, articles are pulled from the NY Times and other additional images are pulled from Unsplash.',
+		description: 'A responsive search app pulling through information from The New York Times API and images from the Unsplash API. The initial view shows a random image from Unsplash and a search box inviting the user to start a search. When a word is search the background changes to a related image, articles are pulled from the NY Times and other additional images are pulled from Unsplash.',
 		build: 'Built with HTML, CSS and Javascript with API calls to Unsplash and NY Times',
 		url: 'http://portfolio.threadkind.com/Search-App/',
 		repo: 'https://github.com/threadkind/Search-App'
@@ -65,7 +65,7 @@ const projectObj = {
 		id: 'arcadeGameClone',
 		name: 'Arcade Game Clone',
 		image: 'images/projects/classic-arcade-game-clone.png',
-		description: 'A Frogger-style web-based arcade game created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship. Some inital files were provided, such as images and a game engine. Many additional features were added such as scoring, character choice, lives, local storage etc. Full details can be found on Github README',
+		description: 'A Frogger-style web-based arcade game created as part of the Grow With Google Udacity Front End Web Developer Nanodegree Scholarship. Some inital files were provided, such as images and a game engine. Along with coding the games functionality, many additional features were added in my version of the project such as scoring, character choice, lives, local storage etc. Full details of the features can be found on Github README',
 		build: 'Built with HTML, CSS + (Object Oriented) Javascript',
 		url: 'http://portfolio.threadkind.com/GWGND03-Classic-Arcade-Game-Clone/',
 		repo: 'https://github.com/threadkind/GWGND03-Classic-Arcade-Game-Clone'
@@ -79,6 +79,15 @@ const projectObj = {
 		url: 'http://portfolio.threadkind.com/GWGND02-Memory-Game/',
 		repo: 'https://github.com/threadkind/GWGND02-Memory-Game'
 	},
+	movieReview: {
+	id: 'movieReview',
+	name: 'Movie Review Site',
+	image: 'images/projects/movie-review.png',
+	description: 'A responsive movie review website coded from scratch with Ruby on Rails. The site features sign up/log in functionality for users to be able to leave reviews of movies. Deployed on Heroku',
+	build: 'Built with Ruby on Rails',
+	url: 'https://tk-movie-review.herokuapp.com',
+	repo: false
+},
 	portfolioSite: {
 		id: 'portfolioSite',
 		name: 'Portfolio Site',
@@ -160,7 +169,17 @@ for (let i = 0; i < Object.values(projectObj).length; i++){
 	const description = Object.values(projectObj)[i].description;
 	const build = Object.values(projectObj)[i].build;
 	const url = Object.values(projectObj)[i].url;
-	const repo = Object.values(projectObj)[i].repo;
+
+	let repo;
+
+	if(Object.values(projectObj)[i].repo){
+		repo = `<a href="${Object.values(projectObj)[i].repo}" target="_blank">View
+            <span class="repoImg"></span>
+                Code</a></div>`
+	}
+	else {
+		repo = ``;
+	};
 
 	document.querySelector('#projects').innerHTML +=
 		`<div class="project">
@@ -175,13 +194,12 @@ for (let i = 0; i < Object.values(projectObj).length; i++){
               </div>
             <div class="overlay"></div>
             <div class="repo">
-                	<a href="${repo}" target="_blank">View
-                		<span class="repoImg"></span>
-                Code</a></div>
+            ${repo}
           </div>
-
-`
-
+		`
+		if(repo){
+			console.log(repo)
+		}
 };
 
 document.querySelector('#projects').addEventListener('mouseover', function(e){
