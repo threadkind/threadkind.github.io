@@ -264,9 +264,6 @@ for (let i = 0; i < Object.values(projectObj).length; i++){
             ${repo}
           </div>
 		`
-		if(repo){
-			console.log(repo)
-		}
 };
 
 document.querySelector('#projects').addEventListener('mouseover', function(e){
@@ -282,12 +279,29 @@ document.querySelector('#projects').addEventListener('mouseout', function(e){
 	}
 });
 
+const hamNav = document.querySelector('.hamburger-nav');
+
+function closeHamNav() {
+	hamNav.classList.add('hide-ham-nav');
+};
+
+document.querySelector('.hamburger-button').addEventListener('click', function(){
+	hamNav.classList.toggle('hide-ham-nav');
+});
+
+document.querySelector('.hamburger-nav').addEventListener('click', function(){
+	closeHamNav();
+});
+
 window.addEventListener('scroll', function(e){
 	if(window.scrollY >= (window.innerHeight - 100)){
-		document.querySelector('.backToTop').style.display = 'inline-block';
+		document.querySelector('.hamburger-button').style.display = 'inline-block';
 	}
 	else {
-		document.querySelector('.backToTop').style.display = 'none';
+		document.querySelector('.hamburger-button').style.display = 'none';
+		if(hamNav.classList.contains('hide-ham-nav') === false){
+			closeHamNav();
+		}
 
 	}
 })
