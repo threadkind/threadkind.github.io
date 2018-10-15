@@ -56,7 +56,8 @@ main {
 	top: 40px;
 	right: 40px;
 	z-index: 9;
-	width: 35%;
+	width: 50%;
+	max-width: 300px;
 }
 
 .hide-ham-nav {
@@ -69,7 +70,7 @@ main {
 }
 
 .ham-links {
-	font-size: 40px;
+	font-size: 6vw;
 	padding: 5px 20px;
 	color: rgb(255,255,255);
 	font-weight: bolder;
@@ -273,6 +274,9 @@ nav {
 /* M E D I A    Q U E R I E S */
 
 @media screen and (min-width: 750px) {
+	.ham-links {
+		font-size: 40px;
+	}
 	.navLinks {
 		font-size: 2em;
 	}
